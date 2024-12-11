@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Clustering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Patient Clustering System</h1>
+        <form id="patientForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter patient's name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter patient's age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="Enter patient's city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="symptoms">Symptoms:</label>
+                <input type="text" id="symptoms" placeholder="e.g., fever, cough" required>
+            </div>
+
+            <button type="submit">Add Patient</button>
+        </form>
+
+        <h2>Patient Data</h2>
+        <table id="patientTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Symptoms</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>Clustering Results</h2>
+        <div id="clusters"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
